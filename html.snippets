@@ -1,0 +1,31 @@
+snippet html
+<!DOCTYPE html>
+<html lang="${1:de}">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${2:`substitute(vim_snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+  </head>
+  <body>
+    ${0}
+  </body>
+</html>
+endsnippet
+
+snippet div
+<div class="$1">
+  
+</div>
+endsnippet
+
+snippet p
+<p class="$1">
+  
+</p>
+endsnippet
+
+snippet span
+<span class="$1">
+  
+</span>
+endsnippet
